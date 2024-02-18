@@ -1301,7 +1301,7 @@ public:
                 ans[i++]='o';
                 j++;
             }
-            else if((command[j]=='('&&command[j+1]!=')')||command[j]==')')
+            else if((command[j]=='('&&command[j+1]!=')')||command[j]==')
             {
                 continue;
             }
@@ -1461,7 +1461,7 @@ Explanation: There is only one item matching the given rule, which is ["computer
 
 enum {
     TYPE = 0,
-    COLOR,
+    COLOR,-
     NAME
 };
 
